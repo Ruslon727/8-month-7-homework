@@ -20,7 +20,7 @@ const CustomModal: React.FC<ModalType> = ({ setIsLogin, children, isOpen, onOpen
         <ModalContent>
           <ModalHeader className="flex items-center justify-center gap-5">
             <p onClick={() => setIsLogin("login")} className={`${isLogin == "login" ? "text-[#f5a524]" : ""} text-[20px] cursor-pointer `}>Login</p>
-            <p onClick={() => setIsLogin("createUser")} className={`${isLogin == "createUser" ? "text-[#f5a524]" : ""} text-[20px] cursor-pointer `}>Creata User</p>
+            <p onClick={() => setIsLogin("createUser")} className={`${isLogin == "createUser" ? "text-[#f5a524]" : ""} text-[20px] cursor-pointer `}>Create User</p>
           </ModalHeader>
           <ModalBody>
             {children}
